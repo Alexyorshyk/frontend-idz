@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Олександр Пономаренко — Особиста сторінка</title>
+  <meta name="description" content="Особиста сторінка Олександра Пономаренка — студента, розробника, мешканця Безлюдівки." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<!-- 
+     NAVIGATION
+      -->
+<nav>
+  <a class="nav-logo" href="#hero">О.П.</a>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#moods">Про мене</a></li>
+    <li><a href="#grades">Оцінки</a></li>
+    <li><a href="#movies">Фільми</a></li>
+    <li><a href="#quote">Цитата</a></li>
+    <li><a href="#location">Місто</a></li>
+    <li><a href="#slideshow">Фото</a></li>
+    <li><a href="cyberpunk.html">Проект</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="theme-toggle" id="themeToggle" role="button" aria-label="Перемикач теми" tabindex="0">
+      <span>☀️</span>
+      <div class="toggle-track">
+        <div class="toggle-knob"></div>
+      </div>
+      <span>🌙</span>
+    </div>
+    <button class="burger" id="burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- 
+     HERO
+      -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <img class="hero-avatar" src="images/mood-now.jpg" alt="Олександр Пономаренко" />
+    <div class="hero-content">
+      <p class="hero-greeting">Привіт, я —</p>
+      <h1 class="hero-name">Олександр<br/>Пономаренко</h1>
+      <p class="hero-desc">Студент-програміст · Харківська область, Безлюдівка</p>
+      <div class="hero-badges">
+        <span class="badge">Відповідальний</span>
+        <span class="badge">Наполегливий</span>
+        <span class="badge">Чесний</span>
+      </div>
+      <a class="hero-email" href="mailto:ponom.sanya037@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <polyline points="2,4 12,13 22,4"/>
+        </svg>
+        ponom.sanya037@gmail.com
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll">Scroll</div>
+</section>
+
+<!-- 
+     MOODS — 3 PHOTOS
+      -->
+<section id="moods">
+  <div class="section-inner">
+    <p class="section-label reveal">Про мене</p>
+    <h2 class="section-title reveal">Три настрої</h2>
+    <div class="section-divider reveal"></div>
+
+    <div class="moods-grid">
+      <div class="mood-card reveal card">
+        <img src="images/mood-happy.jpg" alt="Щасливий настрій" loading="lazy"/>
+        <div class="mood-label">
+          <span class="mood-emoji">😊</span>
+          Щасливий
+        </div>
+      </div>
+      <div class="mood-card reveal card">
+        <img src="images/mood-sad.jpg" alt="Сумний настрій" loading="lazy"/>
+        <div class="mood-label">
+          <span class="mood-emoji">😔</span>
+          Задумливий
+        </div>
+      </div>
+      <div class="mood-card reveal card delay-2">
+        <img src="images/mood-now.jpg" alt="Зараз" loading="lazy"/>
+        <div class="mood-label">
+          <span class="mood-emoji">😐</span>
+          Зараз
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 
+     GRADES TABLE
+      -->
+<section id="grades">
+  <div class="section-inner">
+    <p class="section-label reveal">Навчання</p>
+    <h2 class="section-title reveal">Оцінки за семестр</h2>
+    <div class="section-divider reveal"></div>
+
+    <div class="table-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Дисципліна</th>
+            <th>Викладач</th>
+            <th>Бал</th>
+            <th>ECTS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Математична логіка, теорія алгоритмів та структури даних</td>
+            <td>Татарінова О.А.</td>
+            <td><span class="grade-score">90</span></td>
+            <td><span class="grade-ects">A</span></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Організація баз даних</td>
+            <td>Мартиненко Г.Ю.</td>
+            <td><span class="grade-score">98</span></td>
+            <td><span class="grade-ects">A</span></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Програмування GUI</td>
+            <td>Дашкевич А.О.</td>
+            <td><span class="grade-score">94</span></td>
+            <td><span class="grade-ects">A</span></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Програмування комп'ютерної графіки</td>
+            <td>Сенько А.В.</td>
+            <td><span class="grade-score">95</span></td>
+            <td><span class="grade-ects">A</span></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Технології програмування</td>
+            <td>Шаповалова М.І.</td>
+            <td><span class="grade-score">91</span></td>
+            <td><span class="grade-ects">A</span></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Іноземна мова</td>
+            <td>Ларченко В.В.</td>
+            <td><span class="grade-score">100</span></td>
+            <td><span class="grade-ects">A</span></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>ОК СВУ</td>
+            <td>Клименко О.І.</td>
+            <td><span class="grade-score">90</span></td>
+            <td><span class="grade-ects">A</span></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Правознавство</td>
+            <td>Кузьменко О.В.</td>
+            <td><span class="grade-score">96</span></td>
+            <td><span class="grade-ects">A</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 
+     MOVIES
+      -->
+<section id="movies">
+  <div class="section-inner">
+    <p class="section-label reveal">Дозвілля</p>
+    <h2 class="section-title reveal">5 улюблених фільмів і серіалів</h2>
+    <div class="section-divider reveal"></div>
+
+    <ul class="movies-list">
+      <li class="reveal">
+        <span class="movie-num">01</span>
+        <a class="movie-link" href="https://www.imdb.com/title/tt15398776/" target="_blank" rel="noopener">
+          🎬 Оппенгеймер
+          <svg class="icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </li>
+      <li class="reveal delay-1">
+        <span class="movie-num">02</span>
+        <a class="movie-link" href="https://www.imdb.com/title/tt0948103/" target="_blank" rel="noopener">
+          🌀 Ґуррен Лаґанн
+          <svg class="icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </li>
+      <li class="reveal delay-2">
+        <span class="movie-num">03</span>
+        <a class="movie-link" href="https://www.imdb.com/title/tt0944947/" target="_blank" rel="noopener">
+          ⚔️ Гра Престолів
+          <svg class="icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </li>
+      <li class="reveal delay-3">
+        <span class="movie-num">04</span>
+        <a class="movie-link" href="https://www.imdb.com/title/tt0816692/" target="_blank" rel="noopener">
+          🚀 Інтерстеллар
+          <svg class="icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </li>
+      <li class="reveal delay-4">
+        <span class="movie-num">05</span>
+        <a class="movie-link" href="https://www.imdb.com/title/tt1675434/" target="_blank" rel="noopener">
+          🎭 1+1 (Intouchables)
+          <svg class="icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- QUOTE
+      -->
+<section id="quote">
+  <div class="quote-inner">
+    <span class="quote-mark">"</span>
+    <p class="quote-text">
+      Мабуть, навіть якщо повернути втрачене силою, воно все одно не буде таким, як раніше
+    </p>
+    <p class="quote-author">— Ґатс · Berserk</p>
+  </div>
+</section>
+
+<!-- 
+    BEZLYUD
+      -->
+<section id="location">
+  <div class="section-inner">
+    <p class="section-label reveal">Моє місто</p>
+    <h2 class="section-title reveal">Безлюдівка, Харківська область</h2>
+    <div class="section-divider reveal"></div>
+
+    <div class="location-grid">
+      <div class="location-facts">
+        <div class="fact-card reveal">
+          <span class="fact-icon">🏡</span>
+          <div>
+            <h4>Розташування</h4>
+            <p>Безлюдівка — селище міського типу Харківського району, розташоване за 12 км на південь від Харкова. Адміністративно входить до складу Харківської міської громади.</p>
+          </div>
+        </div>
+        <div class="fact-card reveal delay-2">
+          <span class="fact-icon">🌊</span>
+          <div>
+            <h4>Природа</h4>
+            <p>Поруч із селищем простягаються мальовничі озера і водойми, оточені зеленими лісами та очеретами. Місце популярне серед рибалок і любителів активного відпочинку.</p>
+          </div>
+        </div>
+        <div class="fact-card reveal delay-4">
+          <span class="fact-icon">🌅</span>
+          <div>
+            <h4>Краєвиди</h4>
+            <p>Тихе провінційне небо Безлюдівки славиться неймовірними заходами сонця — помаранчеві та рожеві тони відбиваються у дзеркальній поверхні озер.</p>
+          </div>
+        </div>
+        <div class="fact-card reveal delay-6">
+          <span class="fact-icon">📍</span>
+          <div>
+            <h4>Координати</h4>
+            <p>49°54′ пн. ш., 36°16′ сх. д. Населення — близько 10 000 мешканців. Добре транспортне сполучення з Харковом.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-wrap reveal">
+        <iframe
+          src="https://maps.google.com/maps?q=49.8891,36.2686&z=14&output=embed"
+          title="Карта — Безлюдівка"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 
+     SLIDESHOW
+      -->
+<section id="slideshow">
+  <div class="section-inner">
+    <p class="section-label reveal">Галерея</p>
+    <h2 class="section-title reveal">Моя Безлюдівка</h2>
+    <div class="section-divider reveal"></div>
+
+    <div class="slideshow-wrap reveal">
+      <div class="slide active">
+        <img src="images/slide1.jpg" alt="Захід сонця на озері" loading="lazy"/>
+        <div class="slide-caption">🌅 Захід сонця на озері</div>
+      </div>
+      <div class="slide">
+        <img src="images/slide2.jpg" alt="Вечірнє озеро" loading="lazy"/>
+        <div class="slide-caption">🌆 Вечірнє озеро</div>
+      </div>
+      <div class="slide">
+        <img src="images/slide3.jpg" alt="Очерети на березі" loading="lazy"/>
+        <div class="slide-caption">🌾 Очерети на березі</div>
+      </div>
+      <div class="slide">
+        <img src="images/slide4.jpg" alt="Захід з подвір'я" loading="lazy"/>
+        <div class="slide-caption">🏡 Захід із подвір'я</div>
+      </div>
+      <div class="slide">
+        <img src="images/slide5.jpg" alt="Рожеве небо над дорогою" loading="lazy"/>
+        <div class="slide-caption">🌸 Рожеве небо над дорогою</div>
+      </div>
+      <div class="slide">
+        <img src="images/slide6.jpg" alt="Будинок на заході сонця" loading="lazy"/>
+        <div class="slide-caption">🏘️ Будинок на заході сонця</div>
+      </div>
+
+      <button class="slide-btn slide-prev" id="slidePrev" aria-label="Попереднє фото">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15,18 9,12 15,6"/></svg>
+      </button>
+      <button class="slide-btn slide-next" id="slideNext" aria-label="Наступне фото">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9,6 15,12 9,18"/></svg>
+      </button>
+    </div>
+
+    <div class="slide-dots">
+      <button class="dot active" aria-label="Слайд 1"></button>
+      <button class="dot" aria-label="Слайд 2"></button>
+      <button class="dot" aria-label="Слайд 3"></button>
+      <button class="dot" aria-label="Слайд 4"></button>
+      <button class="dot" aria-label="Слайд 5"></button>
+      <button class="dot" aria-label="Слайд 6"></button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>
+    © 2026 <strong>Олександр Пономаренко</strong> ·
+    <a href="mailto:ponom.sanya037@gmail.com">ponom.sanya037@gmail.com</a> ·
+    <a href="cyberpunk.html">Мій проект →</a>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
